@@ -38,7 +38,7 @@ export default class App extends React.Component {
     return (
       <div className="App">
         <div className="add-item">
-           <Form addItem={this.addTask} />
+           <Form addTask={this.addTask} />
          </div>
         <TodoList toggleCompleted={this.toggleCompleted} todos={this.state.todos} />
         <button className="clear-btn" onClick={this.clearCompleted}>Clear Completed</button>
