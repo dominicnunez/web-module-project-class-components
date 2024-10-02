@@ -24,7 +24,7 @@ export default class App extends React.Component {
   toggleCompleted = taskID => {
     this.setState({...this.state, todos: this.state.todos.map(task => {
       if (task.id == taskID) {
-        return {...task, purchased: !task.purchased}
+        return {...task, completed: !task.completed}
       }
       return task;
     })})
